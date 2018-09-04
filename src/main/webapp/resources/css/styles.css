@@ -98,7 +98,10 @@ body {
     margin: 0 auto;
 }
 
-
 .form-signin-heading{
+    text-align: center;
+}
+
+.well-sm{
     text-align: center;
 }
