@@ -1,5 +1,5 @@
 <footer class="footer">
-    <div class="container">
-        <p class="navbar-text">Sample app &trade;</p>
+    <div class="container" id="footer-text" >
+        <p id="actual-text">Sample app &trade;</p>
     </div>
 </footer>
