@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+    <title>Login page</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
@@ -18,7 +18,7 @@
 
 
 
-<div class="container">
+<div class="container super-center ">
     <div class="col-sm-6 col-md-4 col-md-offset-4">
         <form class="form-signin" action="/login-servlet" method="post">
             <h2 class="form-signin-heading">Login</h2>
