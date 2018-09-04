@@ -94,3 +94,6 @@ body {
 .bs-callout-info h4 {
     color: #5bc0de;
 }
+.centered{
+    margin: 0 auto;
+}
