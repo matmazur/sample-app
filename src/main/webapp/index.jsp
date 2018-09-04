@@ -16,9 +16,22 @@
 <c:import url="WEB-INF/fragments/header.jspf"/>
 
 
-
-
-
+<div class="container">
+    <div class="row bs-callout bs-callout-primary">
+        <div class="col col-md-1 col-sm-2">
+            <div class="col col-md-1 col-sm-2">
+                <a href="#" class="btn btn-block btn-primary btn-success"><span
+                        class="glyphicon glyphicon-arrow-up"></span> </a>
+                <div class="well well-sm centered">12</div>
+                <a href="#" class="btn btn-block btn-primary btn-warning"><span
+                        class="glyphicon glyphicon-arrow-down"></span> </a>
+            </div>
+        </div>
+        <div class="col col-md-11 col-sm-10">
+            <!--  -->
+        </div>
+    </div>
+</div>
 
 
 <c:import url="WEB-INF/fragments/footer.jspf"/>
