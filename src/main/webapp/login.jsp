@@ -25,10 +25,14 @@
             <input name="username" type="text" class="form-control" placeholder="username" required autofocus>
             <input name="password" type="password" class="form-control" placeholder="password" required>
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-            <a href="#">Sign up</a>
+            <a href="${pageContext.request.contextPath}/register.jsp">Sign up</a>
         </form>
     </div>
 </div>
+
+<c:import url="WEB-INF/fragments/footer.jspf"/>
+
+
 
 </body>
 </html>
