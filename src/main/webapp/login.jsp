@@ -20,7 +20,7 @@
 
 <div class="container">
     <div class="col-sm-6 col-md-4 col-md-offset-4">
-        <form class="form-signin" action="j_security_check" method="post">
+        <form class="form-signin" action="/login-servlet" method="post">
             <h2 class="form-signin-heading">Login</h2>
             <input name="username" type="text" class="form-control" placeholder="username" required autofocus>
             <input name="password" type="password" class="form-control" placeholder="password" required>
@@ -32,7 +32,9 @@
 
 <c:import url="WEB-INF/fragments/footer.jspf"/>
 
-
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/bootstrap.js"></script>
 
 </body>
 </html>

@@ -32,7 +32,9 @@
 
 
 <c:import url="WEB-INF/fragments/footer.jspf"/>
-
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/bootstrap.js"></script>
 
 </body>
 </html>
