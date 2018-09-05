@@ -6,9 +6,9 @@ import com.someapp.DAO.modelDAO.interfaces.VoteDAO;
 
 public abstract class DAOFactory {
 
-    public abstract DiscoveryDAO getDiscoveryDao();
-    public abstract UserDAO getUserDao();
-    public abstract VoteDAO getVoteDao();
+    public abstract DiscoveryDAO getDiscoveryDAO();
+    public abstract UserDAO getUserDAO();
+    public abstract VoteDAO getVoteDAO();
 
 
 }
