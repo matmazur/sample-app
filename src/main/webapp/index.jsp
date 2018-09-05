@@ -7,8 +7,8 @@
     <title>App main page</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
-    <link href="${pageContext.request.contextPath}/resources/css/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css" voteType="text/css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}/resources/css/styles.css" voteType="text/css" rel="stylesheet"/>
 
     <meta http-equiv="cache-control" content="max-age=0" />
     <meta http-equiv="cache-control" content="no-cache" />

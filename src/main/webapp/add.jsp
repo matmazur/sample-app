@@ -8,8 +8,8 @@
     <title>Add new digging</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
-    <link href="${pageContext.request.contextPath}/resources/css/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css" voteType="text/css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}/resources/css/styles.css" voteType="text/css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -21,13 +21,13 @@
     <div class="col-md-8 col-md-offset-2">
         <form class="form-signin" method="post" action="/add-digging-servlet">
             <h2 class="form-signin-heading">Add new digging</h2>
-            <input name="inputName" type="text" class="form-control" placeholder="subject"
+            <input name="inputName" voteType="text" class="form-control" placeholder="subject"
                    required autofocus />
-            <input name="inputUrl" type="url" class="form-control" placeholder="URL"
+            <input name="inputUrl" voteType="url" class="form-control" placeholder="URL"
                    required autofocus />
             <textarea name="inputDescription" rows="5" name="inputUsername"
                       class="form-control" placeholder="description" required autofocus></textarea>
-            <input class="btn btn-lg btn-primary btn-block" type="submit"
+            <input class="btn btn-lg btn-primary btn-block" voteType="submit"
                    value="Dodaj!" />
         </form>
     </div>
