@@ -1,4 +1,4 @@
-package DAO;
+package com.someapp.DAO;
 
 import java.io.Serializable;
 import java.util.List;

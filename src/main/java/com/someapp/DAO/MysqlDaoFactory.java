@@ -1,4 +1,4 @@
-package DAO;
+package com.someapp.DAO;
 
 public class MysqlDaoFactory extends DAOFactory {
     @Override
