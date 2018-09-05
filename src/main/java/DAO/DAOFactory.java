@@ -1,11 +1,11 @@
-package dao;
+package DAO;
 
-import com.someapp.model.Discovery;
+import DAO.modelDAO.UserDAO;
 
 public abstract class DAOFactory {
 
     public abstract DiscoveryDao getDiscoveryDao();
-    public abstract UserDao getUserDao();
+    public abstract UserDAO getUserDao();
     public abstract VoteDao getVoteDao();
 
 

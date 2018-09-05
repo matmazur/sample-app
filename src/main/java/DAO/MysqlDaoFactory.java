@@ -1,6 +1,4 @@
-package dao;
-
-import com.someapp.model.Discovery;
+package DAO;
 
 public class MysqlDaoFactory extends DAOFactory {
     @Override
