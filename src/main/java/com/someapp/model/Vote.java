@@ -5,7 +5,6 @@ import java.util.Objects;
 
 public class Vote {
 
-
     private long id;
     private Timestamp date;
     private VoteType voteType;
@@ -22,7 +21,6 @@ public class Vote {
         this.userId = userId;
         this.discoveryId = discoveryId;
     }
-
 
     @Override
     public String toString() {

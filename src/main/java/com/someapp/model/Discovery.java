@@ -14,9 +14,9 @@ public class Discovery {
     private int downVote;
     private User user;
 
+    public Discovery() {
+    }
 
-
-    public Discovery(){}
     public Discovery(long id, String name, String url, String description, Timestamp date, int upVote, int downVote, User user) {
         this.id = id;
         this.name = name;
@@ -27,7 +27,6 @@ public class Discovery {
         this.downVote = downVote;
         this.user = user;
     }
-
 
     @Override
     public String toString() {
