@@ -1,10 +1,6 @@
 package com.someapp.servlets;
 
-import com.someapp.DAO.DAOFactory;
-import com.someapp.DAO.MysqlDAOFactory;
-import com.someapp.DAO.modelDAO.interfaces.UserDAO;
 import com.someapp.DAO.modelDAO.services.UserService;
-import com.someapp.model.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,10 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-
 @WebServlet("/register-servlet")
 public class RegisterServlet extends HttpServlet {
-
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -31,7 +25,6 @@ public class RegisterServlet extends HttpServlet {
         String email = request.getParameter("inputEmail");
         String username = request.getParameter("inputUsername");
         String password = request.getParameter("password");
-
         UserService service = new UserService();
 
         service.addUser(username,password,email);
