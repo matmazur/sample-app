@@ -38,7 +38,7 @@ public class UserDAOImpl implements UserDAO {
     }
 
     private void setPrivigiles(User user) {
-        final String userRoleQuery = "INSERT INTO user_role(username) VALUES(:username)";
+        final String userRoleQuery = "INSERT INTO user_role(username) VALUES(:username);";
         SqlParameterSource paramSource = new BeanPropertySqlParameterSource(user);
         template.update(userRoleQuery, paramSource);
     }
