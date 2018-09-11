@@ -5,3 +5,9 @@ INSERT INTO user(username, email, is_active, password)
 	VALUES('admin', 'admin@gmail.com', 1, 'password');
 
 INSERT INTO user_role VALUES('admin', 'admin');
+
+
+++++++
+
+
+changed user_role table setting default as 'user'
