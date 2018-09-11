@@ -3,6 +3,7 @@ package com.someapp.servlets;
 import com.someapp.DAO.DAOFactory;
 import com.someapp.DAO.MysqlDAOFactory;
 import com.someapp.DAO.modelDAO.interfaces.UserDAO;
+import com.someapp.DAO.modelDAO.services.UserService;
 import com.someapp.model.User;
 
 import javax.servlet.ServletException;
@@ -16,21 +17,25 @@ import java.io.IOException;
 @WebServlet("/register-servlet")
 public class RegisterServlet extends HttpServlet {
 
-   DAOFactory factory;
-
-
 
     @Override
-    public void init() throws ServletException {
-
-
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getRequestDispatcher("register.jsp").forward(request, response);
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        request.setCharacterEncoding("UTF-8");
 
+        String email = request.getParameter("inputEmail");
+        String username = request.getParameter("inputUsername");
+        String password = request.getParameter("password");
 
+        UserService service = new UserService();
+
+        service.addUser(username,password,email);
+        response.sendRedirect(request.getContextPath() + "/");
 
     }
 }

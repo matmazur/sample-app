@@ -12,6 +12,7 @@ public class UserService {
         user.setEmail(email);
         user.setUsername(username);
         user.setPassword(password);
+        user.setActive(true);
 
         UserDAO factory = DAOFactory.getDAOFactory().getUserDAO();
         factory.create(user);
