@@ -9,13 +9,13 @@ import java.sql.SQLException;
 
 public class ConnectionProvider {
 
-    private DataSource dataSource;
+    private static DataSource dataSource;
 
-    public Connection getConnection() throws SQLException {
+    public static Connection getConnection() throws SQLException {
         return getDataSource().getConnection();
     }
 
-    public DataSource getDataSource() {
+    public static DataSource getDataSource() {
         if (dataSource == null) {
             try {
                 Context initialContext = new InitialContext();
