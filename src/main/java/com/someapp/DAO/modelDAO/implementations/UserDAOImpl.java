@@ -6,6 +6,14 @@ import com.someapp.model.User;
 import java.util.List;
 
 public class UserDAOImpl implements UserDAO {
+
+    private static final String CREATE_USER = "INSERT INTO user(username, password, email, is_active) VALUES (:username, :password, :email, :is_active);";
+
+
+
+
+
+
     @Override
     public User create(User newObject) {
         return null;

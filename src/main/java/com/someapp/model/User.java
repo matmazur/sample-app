@@ -9,6 +9,7 @@ public class User {
     private String email;
     private String password;
     private boolean isActive;
+    private boolean isAdmin;
 
     public User() {
     }
@@ -19,6 +20,14 @@ public class User {
         this.email = email;
         this.password = password;
     }
+    public User(long id, String username, String email, String password,boolean isAdmin) {
+        this.id = id;
+        this.username = username;
+        this.email = email;
+        this.password = password;
+        this.isAdmin=isAdmin;
+    }
+
 
     @Override
     public String toString() {
@@ -87,5 +96,13 @@ public class User {
 
     public void setActive(boolean active) {
         isActive = active;
+    }
+
+    public boolean isAdmin() {
+        return isAdmin;
+    }
+
+    public void setAdmin(boolean admin) {
+        isAdmin = admin;
     }
 }
